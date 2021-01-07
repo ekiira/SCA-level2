@@ -1,13 +1,67 @@
+body {
+  margin: 0;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  padding: 10px 20px;
+}
 .formWrapper {
   display: flex;
-  grid-template-columns: auto auto a;
-
 }
 .form {
-    padding: 10px;
+  padding: 10px 20px;
 }
 
 .form-img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.field {
+  width: 100%;
+  padding: 8px;
+}
+.name-field {
+  width: 100%;
+  display: flex;
+}
+
+.first {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.last {
+  width: 100%;
+  padding-left: 10px;
+}
+.email, .company, .phone, .textarea, .referrer {
+  width: 100%;
+}
+
+.formOne {
+  width: 40%;
+  padding: 0 30px;
+}
+
+.formTwo {
+  width: 50%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
 }

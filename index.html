@@ -5,48 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCA Contact Form</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="formWrapper">
-      <div class="form">
-          <h2>Let's work together</h2>
-          <p>We'd love to hear from you! Send us a message using the form below, or email us. 
-              We'd love to hear from you! Send us a message using the form below, or email us </p>
-        <form>
-            <label>First Name</label>
-            <input />
-            <label>Last Name</label>
-            <input />
-            <label>Email</label>
-            <input />
-            <label>Company</label>
-            <input />
-            <label>Phone</label>
-            <input />
-            <label>How can we help you</label>
-            <textarea></textarea>
-            <label>Expected budget</label>
-            <input type="radio" id="lessThan25k"/>
-            <label for="lessThan25k">Less than $25k</label>
+    <div class="section">
+      <div class="wrapper">
+        <div class="formWrapper">
+          <div class="form formOne">
+            <h2>Let's work together</h2>
+            <p>
+              We'd love to hear from you! Send us a message using the form
+              below, or email us. We'd love to hear from you! Send us a message
+              using the form below, or email us
+            </p>
+            <form>
+              <div class="field name-field">
+                <div class="first">
+                  <label>First Name</label> <input style="width: 100%" />
+                </div>
+                <div class="last">
+                  <label>Last Name</label>
+                  <input style="width: 100%" />
+                </div>
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input class="email" />
+              </div>
+              <div class="field">
+                <label>Company</label>
+                <input class="company" />
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input class="phone" />
+              </div>
+              <div class="field">
+                <label>How can we help you</label>
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="field">
+                <div>
+                  <label>Expected budget</label>
+                </div>
+                <div>
+                  <input type="radio" id="lessThan25k" />
+                  <label for="lessThan25k">Less than $25k</label>
+                </div>
+                <div>
+                  <input type="radio" id="$25k+" />
+                  <label for="25k+">$25k - $50k</label>
+                </div>
+                <div>
+                  <input type="radio" id="50k+" />
+                  <label for="50k+">$50k - $100kk</label>
+                </div>
 
-            <input type="radio" id="$25k+"/>
-            <label for="25k+">$25k - $50k</label>
+                <div>
+                  <input type="radio" id="100k+" />
+                  <label for="100k+">$100k+</label>
+                </div>
+              </div>
+              <div class="field">
+                <label>How did you hear about us</label>
+                <input class="referrer" />
+              </div>
+              <div class="button">
+              <button>Submit</button>
 
-            <input type="radio" id="50k+"/>
-            <label for="50k+">$50k - $100kk</label>
-
-            <input type="radio" id="100k+"/>
-            <label for="100k+">$100k+</label>
-
-            <label>How did you hear about us</label>
-            <input />
-
-            <button>Submit</button>
-        </form>
-      </div>
-      <div class="form">
-        <img src="./assets/office.jpeg" class="form-img" />
+              </div>
+            </form>
+          </div>
+          <div class="form formTwo">
+            <img src="./assets/office.jpeg" class="form-img" />
+          </div>
+        </div>
       </div>
     </div>
   </body>
