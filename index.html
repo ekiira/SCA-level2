@@ -6,6 +6,11 @@
     <title>SCA Contact Form</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="section">
@@ -18,66 +23,85 @@
               below, or email us. We'd love to hear from you! Send us a message
               using the form below, or email us
             </p>
-            <form>
+            <form name="contactForm">
               <div class="field name-field">
                 <div class="first">
-                  <label>First Name</label> <input style="width: 100%" />
+                  <label for="firstName">First Name</label>
+                  <input
+                    style="width: 100%"
+                    type="text"
+                    required
+                    id="firstName"
+                  />
                 </div>
                 <div class="last">
-                  <label>Last Name</label>
-                  <input style="width: 100%" />
+                  <label for="lastName">Last Name</label>
+                  <input
+                    style="width: 100%"
+                    type="text"
+                    required
+                    id="lastName"
+                  />
                 </div>
               </div>
               <div class="field">
-                <label>Email</label>
-                <input class="email" />
+                <label for="email">Email</label>
+                <input class="email" type="email" required id="email" />
               </div>
               <div class="field">
-                <label>Company</label>
-                <input class="company" />
+                <label for="company">Company</label>
+                <input class="company" type="text" required id="company" />
               </div>
               <div class="field">
-                <label>Phone</label>
-                <input class="phone" />
+                <label for="phone">Phone</label>
+                <input class="phone" type="number" required id="phone" />
               </div>
               <div class="field">
-                <label>How can we help you</label>
-                <textarea class="textarea"></textarea>
+                <label for="helpBox">How can we help you</label>
+                <textarea
+                  class="textarea"
+                  required
+                  rows="4"
+                  id="helpBox"
+                ></textarea>
               </div>
               <div class="field">
                 <div>
-                  <label>Expected budget</label>
+                  <label for="buget">Expected budget</label>
                 </div>
                 <div>
-                  <input type="radio" id="lessThan25k" />
+                  <input type="radio" id="lessThan25k" name="budget" required />
                   <label for="lessThan25k">Less than $25k</label>
                 </div>
                 <div>
-                  <input type="radio" id="$25k+" />
+                  <input type="radio" id="25k+" name="budget" />
                   <label for="25k+">$25k - $50k</label>
                 </div>
                 <div>
-                  <input type="radio" id="50k+" />
+                  <input type="radio" id="50k+" name="budget" />
                   <label for="50k+">$50k - $100kk</label>
                 </div>
 
                 <div>
-                  <input type="radio" id="100k+" />
+                  <input type="radio" id="100k+" name="budget" />
                   <label for="100k+">$100k+</label>
                 </div>
               </div>
               <div class="field">
-                <label>How did you hear about us</label>
-                <input class="referrer" />
+                <label for="referrer">How did you hear about us</label>
+                <input class="referrer" type="text" id="referrer" required />
               </div>
               <div class="button">
-              <button>Submit</button>
-
+                <button>Submit</button>
               </div>
             </form>
           </div>
           <div class="form formTwo">
-            <img src="./assets/office.jpeg" class="form-img" />
+            <img
+              src="./assets/office.jpeg"
+              class="form-img"
+              alt="ofiice-image"
+            />
           </div>
         </div>
       </div>

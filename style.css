@@ -1,41 +1,41 @@
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 label {
   padding-bottom: 10px;
 }
 
-input {
-  border: 1px solid gray;
+input,
+textarea {
+  border: 1px solid #b0b0b0;
   border-radius: 3px;
+  padding: 8px 5px;
+  margin-left: 0;
+  color: #444444;
+  font-size: 16px;
+}
+
+form {
+  width: 100%;
 }
 
 .section {
-  height: 100vh;
   display: flex;
-  align-items: center;
-}
-.wrapper {
-  padding: 10px 20px;
-}
-.formWrapper {
-  display: flex;
-}
-.form {
-  padding: 10px 20px;
 }
 
-.form-img {
-  width: 100%;
+.formWrapper {
+  display: flex;
   height: 100%;
+  flex-wrap: nowrap;
 }
+
 .field {
-  width: 100%;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
 }
+
 .name-field {
-  width: 100%;
   display: flex;
 }
 
@@ -48,20 +48,63 @@ input {
   width: 100%;
   padding-left: 10px;
 }
-.email, .company, .phone, .textarea, .referrer {
+.email,
+.company,
+.phone,
+.textarea,
+.referrer {
   width: 100%;
 }
 
 .formOne {
-  width: 40%;
-  padding: 0 30px;
+  flex: 0 0 35%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .formTwo {
-  width: 50%;
+  flex: 0 0 55%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.form-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .button {
   display: flex;
   justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.button button {
+  background-color: #713ee5;
+  border: none;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .formOne {
+    order: 2;
+    flex: 0 0 75%;
+    margin: 0 auto;
+  }
+
+  .formTwo {
+    width: 100%;
+    height: 30%;
+    order: 1;
+    flex: 0 0 100%;
+  }
 }
