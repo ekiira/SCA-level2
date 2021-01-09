@@ -108,3 +108,15 @@ form {
     flex: 0 0 100%;
   }
 }
+
+.confirm {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.confirm p {
+  margin-top: 0;
+}
